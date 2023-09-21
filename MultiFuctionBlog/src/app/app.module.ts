@@ -7,16 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { materialSharedModule } from './shared-material/materialSharedModule';
 import { ReactiveFormsModule } from '@angular/forms';
-import { IndexSidenavComponent } from './layouts/components/sidenav/indexSidenav/index-sidenav/index-sidenav.component';
 import { BaseInfoTopbarComponent } from './layouts/components/topbar/base-info-topbar/base-info-topbar.component';
-import { BaseLayoutComponent } from './layouts/base-layout/base-layout/base-layout.component';
-import { ContainerComponent } from './layouts/components/container/container/container.component';
-import { FooterComponent } from './layouts/components/footer/footer/footer.component';
+import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
+import { ContainerComponent } from './layouts/components/container/container.component';
+import { FooterComponent } from './layouts/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexSidenavComponent,
     BaseInfoTopbarComponent,
     BaseLayoutComponent,
     ContainerComponent,
