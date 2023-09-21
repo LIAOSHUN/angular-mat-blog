@@ -16,12 +16,5 @@ export class IndexSidenavComponent {
     });
   }
 
-  opened() {
-    console.log('芝麻開門');
-  }
-
-  closed() {
-    console.log('芝麻關門');
-  }
 
 }

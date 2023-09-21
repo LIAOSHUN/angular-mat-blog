@@ -1,3 +1,16 @@
-<div style="border-style: dashed;">
-  <router-outlet></router-outlet>
+<app-base-info-topbar (toggleSideNavEmit)="toggleSideNavContainer($event)"></app-base-info-topbar>
+<div>
+  <mat-sidenav-container> <!-- <mat-sidenav-container>：代表整個包含邊欄導覽的容器 -->
+    <mat-sidenav mode="side" [opened]="sideNavDisplayFlag" style="border-style:outset;"> <!-- <mat-sidenav>：實際上邊欄導覽的內容 -->
+      <div>我是左邊選單</div>
+      <div>我是左邊選單</div>
+      <div>我是左邊選單</div>
+    </mat-sidenav>
+    <mat-sidenav-content> <!-- <mat-sidenav-content>：導覽以外的實際內容 -->
+      <div style="border-style: dashed;">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

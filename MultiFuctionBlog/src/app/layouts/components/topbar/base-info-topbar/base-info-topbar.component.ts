@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-base-info-topbar',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./base-info-topbar.component.scss']
 })
 export class BaseInfoTopbarComponent {
+
+  @Output() toggleSideNavEmit = new EventEmitter<boolean>;
+  sideNavDisplayFlag: boolean = false;
+
+  toggleSideNavTopbar() {
+    this.sideNavDisplayFlag = !this.sideNavDisplayFlag;
+    this.toggleSideNavEmit.emit(this.sideNavDisplayFlag);
+  }
 
 }

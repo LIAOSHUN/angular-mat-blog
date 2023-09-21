@@ -8,12 +8,12 @@ const routes: Routes = [
     component: BaseLayoutComponent,
     children: [
       {
-        path: 'home',
-        loadChildren: ()=> import('./pages/system/home/home.module').then(m => m.HomeModule)
+        path: '',
+        loadChildren: () => import('./pages/system/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'shop',
-        loadChildren: ()=> import('./pages/system/shop/shop.module').then(m => m.ShopModule)
+        loadChildren: () => import('./pages/system/shop/shop.module').then(m => m.ShopModule)
       }
     ]
   }
