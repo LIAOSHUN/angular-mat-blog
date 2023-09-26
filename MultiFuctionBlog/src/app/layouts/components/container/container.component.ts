@@ -8,12 +8,10 @@ import { MatDrawerToggleResult, MatSidenav } from '@angular/material/sidenav';
 })
 export class ContainerComponent {
 
-  sideNavDisplayFlag: boolean = false;
+  sideNavDisplayFlag: boolean = true;
 
   toggleSideNavContainer(flag: boolean) {
-    console.log(flag)
     this.sideNavDisplayFlag = flag;
-
   }
 
 }

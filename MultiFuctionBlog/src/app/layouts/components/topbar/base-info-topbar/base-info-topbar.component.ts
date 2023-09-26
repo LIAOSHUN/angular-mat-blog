@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class BaseInfoTopbarComponent {
 
   @Output() toggleSideNavEmit = new EventEmitter<boolean>;
-  sideNavDisplayFlag: boolean = false;
+  sideNavDisplayFlag: boolean = true;
 
   toggleSideNavTopbar() {
     this.sideNavDisplayFlag = !this.sideNavDisplayFlag;

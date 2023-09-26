@@ -6,6 +6,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 
+
 @NgModule({
   declarations: [],
   imports: [],
@@ -16,7 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatRadioModule,
     MatToolbarModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
-export class materialSharedModule { }
+export class MaterialSharedModule { }
