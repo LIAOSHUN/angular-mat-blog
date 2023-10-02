@@ -48,6 +48,8 @@ body {
   margin-left: 50%;
 }
 
+/** scrollBar */
+
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
@@ -61,11 +63,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(96, 142, 126);
+  background: rgb(159, 167, 165);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(36, 108, 83);
+  background: rgba(216, 229, 225, 0.839);
 }
