@@ -3,9 +3,18 @@
   <mat-sidenav-container> <!-- <mat-sidenav-container>：代表整個包含邊欄導覽的容器 -->
     <mat-sidenav class="blog-sidenav" mode="side" [opened]="sideNavDisplayFlag" style="border-style:outset;">
       <!-- <mat-sidenav>：實際上邊欄導覽的內容 -->
-      <div>我是左邊選單</div>
-      <div>我是左邊選單</div>
-      <div>我是左邊選單</div>
+      <mat-nav-list>
+        <h3 matSubheader>示範用頁面</h3>
+        <a [routerLink]="['/']" mat-list-item>首頁</a>
+        <a [routerLink]="['/', 'shop']" mat-list-item>購物中心</a>
+        <a [routerLink]="['/', 'practice', 'pra1']" mat-list-item>練習題</a>
+        <a [routerLink]="['/']" mat-list-item>部落格</a>
+        <mat-divider></mat-divider>
+        <!-- 另外一組選單 -->
+        <h3 matSubheader>其他頁面</h3>
+        <a [routerLink]="['/']" mat-list-item>Google</a>
+        <a [routerLink]="['/']" mat-list-item>Facebook</a>
+      </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="blog-container" [class.blog-collapse]="sideNavDisplayFlag">
       <!-- <mat-sidenav-content>：導覽以外的實際內容 -->
