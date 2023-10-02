@@ -10,6 +10,7 @@ import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component
 import { ContainerComponent } from './layouts/components/container/container.component';
 import { FooterComponent } from './layouts/components/footer/footer.component';
 import { AllCommonModule } from './shared/modules/all-common/all-common.module';
+import { PrimengSharedModuleModule } from './shared-primeng/primeng-shared-module.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AllCommonModule } from './shared/modules/all-common/all-common.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialSharedModule,
+    PrimengSharedModuleModule,
     AllCommonModule
   ],
   providers: [],

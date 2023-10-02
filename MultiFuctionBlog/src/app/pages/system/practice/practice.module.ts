@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { PracticeRoutingModule } from './practice-routing.module';
 import { Pra1Component } from './components/pra1/pra1.component';
 import { AllCommonModule } from 'src/app/shared/modules/all-common/all-common.module';
+import { PrimengSharedModuleModule } from 'src/app/shared-primeng/primeng-shared-module.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AllCommonModule } from 'src/app/shared/modules/all-common/all-common.mo
   imports: [
     CommonModule,
     MaterialSharedModule,
+    PrimengSharedModuleModule,
     AllCommonModule,
     PracticeRoutingModule
   ]
