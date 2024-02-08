@@ -27,7 +27,8 @@ body {
 }
 
 .blog-sidenav {
-  height: 100%;
+  // height: 100%;
+  flex: 1 1 auto;
   padding-top: 60px;
   position: fixed !important;
   // top: 0; /* Stay at the top */
